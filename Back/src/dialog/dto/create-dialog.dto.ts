@@ -5,4 +5,5 @@ export class CreateDialogDto {
 export class SendMessageDto{
     message:string
     userId:string
+    authIdUser:string
 }

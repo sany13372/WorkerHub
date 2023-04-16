@@ -81,7 +81,9 @@ export class DialogService {
         })
 
         dialog.messages.push(message)
-        dialog.isRead = false
+        if (updateDto.authIdUser !== updateDto.userId) {
+            dialog.isRead = false
+        }
         return this.dialogRepository.save(dialog)
     }
 }
