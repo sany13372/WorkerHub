@@ -1,0 +1,12 @@
+.window {
+  padding: 0.4rem 0.4rem 2rem 0.4rem;
+  > div {
+    display: flex;
+    padding: 0.4rem;
+    background-color: #16171b;
+    border-radius: 15px;
+    > input{
+      width: 100%;
+    }
+  }
+}

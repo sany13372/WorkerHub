@@ -1,0 +1,20 @@
+.wrapper{
+  display: flex;
+  justify-content: center;
+}
+
+.form{
+  padding: 1rem;
+  background-color: #1d1e24;
+}
+
+.buttons{
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.title{
+  text-align: center;
+  margin-bottom: 1rem;
+}

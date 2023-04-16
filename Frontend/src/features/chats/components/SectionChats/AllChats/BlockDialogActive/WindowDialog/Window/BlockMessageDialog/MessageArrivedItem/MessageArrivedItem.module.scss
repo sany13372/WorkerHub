@@ -1,0 +1,15 @@
+.item{
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  background-color: #16171b;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.block{
+  display: flex;
+  justify-content: flex-start;
+}

@@ -1,0 +1,21 @@
+.info{
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.titles{
+  > div{
+    color: #a6a1f6;
+  }
+}
+
+.image{
+  display: flex;
+  align-items: center;
+  > img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+  }
+}

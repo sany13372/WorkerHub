@@ -1,0 +1,21 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: gray;
+  padding: 0.6rem 0.4rem;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &.active {
+    color: black;
+    background-color: #f3fc89;
+    transition: all 0.5s ease-in-out;
+  }
+
+  &:hover {
+    color: black;
+    background-color: #f3fc89;
+    transition: all 0.5s ease-in-out;
+  }
+}

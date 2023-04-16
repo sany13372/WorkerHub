@@ -1,0 +1,16 @@
+.item{
+  margin-bottom: 1rem;
+  padding: 1rem;
+  color: white;
+  font-weight: bold;
+  background-color: #b685f6;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+.block{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}

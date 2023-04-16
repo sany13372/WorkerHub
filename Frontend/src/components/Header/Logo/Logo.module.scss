@@ -1,0 +1,14 @@
+.logo{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  > img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+
+  > h3{
+    cursor: pointer;
+    color: gray;
+  }
+}

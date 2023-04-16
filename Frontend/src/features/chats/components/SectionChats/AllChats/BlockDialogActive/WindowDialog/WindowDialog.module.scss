@@ -1,0 +1,17 @@
+.window{
+  width: 100%;
+  //flex: 1 0 60%;
+  flex: 1 1 auto;
+  //padding: 0rem 1rem 1rem 1rem;
+  > div{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border-left: 1px solid #1d1e24;
+    border-right: 1px solid #1d1e24;
+    border-bottom: 1px solid #1d1e24;
+    > div:nth-child(2){
+      flex: 1 1 auto;
+    }
+  }
+}

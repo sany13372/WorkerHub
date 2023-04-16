@@ -1,0 +1,62 @@
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item {
+  display: none;
+  padding: 0.6rem;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &.active {
+    display: block;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover {
+    background-color: #1b1d24;
+  }
+}
+
+.titles {
+  display: flex;
+  flex-direction: column;
+
+  > h4 {
+    color: white;
+    font-weight: bold;
+    margin-top: 0.4rem;
+  }
+
+  > div {
+    color: gray;
+    font-size: 0.76rem;
+  }
+}
+
+.dataTitle {
+  color: gray;
+  display: flex;
+  margin-top: 0.9rem;
+  align-items: flex-start;
+  font-size: 0.76rem;
+}
+
+.message {
+  text-align: center;
+  margin-top: 0.4rem;
+  color: gray;
+}
+
+.image {
+  display: flex;
+  align-items: center;
+
+  > img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+  }
+}

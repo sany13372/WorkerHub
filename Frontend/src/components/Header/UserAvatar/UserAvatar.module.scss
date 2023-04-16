@@ -1,0 +1,23 @@
+.block {
+  display: flex;
+  gap: 0.6rem;
+
+  > div:nth-child(1) {
+
+    > h6 {
+      color: gray;
+    }
+  }
+}
+
+.img {
+  display: flex;
+  align-items: center;
+
+  > img {
+    max-width: 50px;
+    max-height: 50px;
+    border-radius: 50%;
+  }
+}
+

@@ -1,0 +1,11 @@
+.line{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  > svg {
+    &:hover{
+      color: #f3fc89;
+      transition: color 0.5s ease-in-out;
+    }
+  }
+}
