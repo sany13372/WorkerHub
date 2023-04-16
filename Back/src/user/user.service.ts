@@ -47,7 +47,7 @@ export class UserService {
     }
 
     remove(id: string) {
-        //const user = this.userRepository.findOneById(id)
+        const user = this.userRepository.findOneById(id)
         return this.userRepository.delete(id)
     }
 }
