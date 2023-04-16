@@ -19,9 +19,9 @@ export const dialogApi = api.injectEndpoints({
                 }]
             })
         }),
-        sendMessage: builder.mutation<any,{message:string,dialogId:string,userId:string}>({
+        sendMessage: builder.mutation<any,{message:string,dialogId:string,userId:string,authIdUser:string}>({
             query: (data) => ({
-                body: {message:data.message,userId:data.userId,dialogId: data.dialogId},
+                body: {message:data.message,userId:data.userId,dialogId: data.dialogId,authIdUser:data.authIdUser},
                 url: `/dialog/message/${data.dialogId}`,
                 method: 'PATCH',
                 invalidatesTags:() => [{
