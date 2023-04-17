@@ -11,6 +11,7 @@ const AllChats: FC = () => {
     const {refetch, dialogs, dialog, dialogActive} = useTypedSelector((store) => store.dialog)
     const {data, isLoading, refetch: refetchData} = useGetDialogsQuery()
     const {setDialogs, setDialogActive} = useActions()
+
     useEffect(() => {
         setDialogs(data || [])
         refetchData()
