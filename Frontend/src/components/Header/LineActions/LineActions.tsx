@@ -9,7 +9,7 @@ const LineActions: FC = () => {
     return (
         <div className={styles.line}>
             <SwitcherThem/>
-            <IoMdCall size={20} cursor={'pointer'}/>
+            <IoMdCall size={20}  cursor={'pointer'}/>
             <MdOutlineNotifications size={20} cursor={'pointer'} />
         </div>
     );

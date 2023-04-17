@@ -1,11 +1,19 @@
 .window {
   padding: 0.4rem 0.4rem 2rem 0.4rem;
+
   > div {
     display: flex;
     padding: 0.4rem;
-    background-color: #16171b;
+    border: 1px solid rgba(255, 0, 0, .5);
+    &.dark {
+      border: none;
+      background-color: #16171b;
+    }
+
     border-radius: 15px;
-    > input{
+
+    > input {
+      color: gray;
       width: 100%;
     }
   }

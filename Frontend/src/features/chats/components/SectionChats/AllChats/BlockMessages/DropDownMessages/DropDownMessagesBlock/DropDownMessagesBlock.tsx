@@ -8,22 +8,12 @@ interface IDropDownMessagesBlock{
     typeItem:boolean
 }
 const DropDownMessagesBlock: FC<IDropDownMessagesBlock> = ({item,isShow,typeItem}) => {
-    const {user} = useAuth()
-    //console.log('wd',item.messages[item.messages.length]?.userId !== String(user?.id))
-    const handle = (typeItem:boolean) => {
-        if (typeItem === false){
-            return item.isRead === typeItem && item.messages[item.messages.length]?.userId !== String(user?.id)
-        } else {
-            //return item.isRead === typeItem
-        }
 
-    }
-   // const showConsist = item.isRead == typeItem && ( typeItem === false ? item.messages[item.messages.length]?.userId !== String(user?.id) : true )
-    const showConsist = item.isRead === typeItem//handle(typeItem)
+    const showConsist = item.isRead === typeItem
+
     return (
         <>
-            {showConsist &&
-                <DropDownMessagesItem isShow={isShow} item={item}/>}
+            {showConsist && <DropDownMessagesItem isShow={isShow} item={item}/>}
         </>
     );
 }

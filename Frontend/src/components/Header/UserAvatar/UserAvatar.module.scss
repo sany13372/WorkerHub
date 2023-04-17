@@ -10,6 +10,13 @@
   }
 }
 
+.titleName{
+  color: black;
+  &.dark{
+    color: white;
+  }
+}
+
 .img {
   display: flex;
   align-items: center;

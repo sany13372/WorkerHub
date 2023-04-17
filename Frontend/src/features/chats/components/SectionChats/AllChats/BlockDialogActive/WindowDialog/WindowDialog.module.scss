@@ -7,9 +7,6 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    border-left: 1px solid #1d1e24;
-    border-right: 1px solid #1d1e24;
-    border-bottom: 1px solid #1d1e24;
     > div:nth-child(2){
       max-height: 530px;
       overflow: auto;

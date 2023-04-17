@@ -3,6 +3,7 @@
   align-items: center;
   gap: 1rem;
   > svg {
+    color: gray;
     &:hover{
       color: #f3fc89;
       transition: color 0.5s ease-in-out;

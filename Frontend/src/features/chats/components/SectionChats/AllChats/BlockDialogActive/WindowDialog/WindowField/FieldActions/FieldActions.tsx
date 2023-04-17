@@ -8,7 +8,7 @@ interface IFieldActions{
 const FieldActions: FC<IFieldActions> = ({sendMessage}) => {
     return (
         <div>
-            <Action icon={<FaTelegramPlane onClick={sendMessage}  size={20}/>}/>
+            <Action icon={<FaTelegramPlane color={'gray'} onClick={sendMessage}  size={20}/>}/>
         </div>
     );
 }

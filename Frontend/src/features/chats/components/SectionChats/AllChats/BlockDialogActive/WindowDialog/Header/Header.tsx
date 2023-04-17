@@ -2,21 +2,33 @@ import {FC} from 'react';
 import styles from './Header.module.scss'
 import {IDialog} from "@features/chats/store/dialog/types";
 import {BsFillFileEarmarkCheckFill, BsFillPhoneFill} from 'react-icons/bs'
+import cn from 'clsx'
+import {useThemContext} from "@providers/ThemProvider";
 
 const Header: FC<{ dialog: IDialog | null }> = ({dialog}) => {
+    const {dark} = useThemContext()
     return (
-        <div className={styles.header}>
-            <div className={styles.img}>
-                <img src={dialog?.user?.avatar} alt="Картинка"/>
+        <div className={cn(styles.header, {
+            [styles.dark]: dark
+        })}>
+            <div>
+                <div className={styles.img}>
+                    <img src={dialog?.user?.avatar} alt="Картинка"/>
+                </div>
+                <div className={styles.title}>Разговор с</div>
+                <h4 className={cn(styles.titleName, {
+                    [styles.dark]: dark
+                })}>{dialog?.user?.firstname}</h4>
             </div>
-            <div className={styles.title}>Разговор с</div>
-            <h4>{dialog?.user?.firstname}</h4>
-            <button className={styles.button}>
-                Принять предложение
-            </button>
             <div className={styles.icons}>
-                <BsFillFileEarmarkCheckFill cursor={'pointer'} size={20}/>
-                <BsFillPhoneFill cursor={'pointer'} size={20}/>
+                <button
+                    className={cn(styles.button, {
+                        [styles.dark]: dark
+                    })}>
+                    Принять предложение
+                </button>
+                <BsFillFileEarmarkCheckFill cursor={'pointer'} color={'gray'} size={20}/>
+                <BsFillPhoneFill cursor={'pointer'} color={'gray'} size={20}/>
             </div>
         </div>
     );

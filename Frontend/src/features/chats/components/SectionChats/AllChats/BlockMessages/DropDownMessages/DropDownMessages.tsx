@@ -1,4 +1,4 @@
-import {FC, useState} from 'react';
+import {FC, memo, useState} from 'react';
 import styles from './DropDownMessages.module.scss'
 import cn from 'clsx'
 import DropDownMessagesItem from "./DropDownMessagesBlock/DropDownMessagesItem/DropDownMessagesItem";
@@ -34,4 +34,4 @@ const DropDownMessages: FC<IDropDownMessages> = ({dialogs, title, typeItem, last
     );
 }
 
-export default DropDownMessages;
+export default memo(DropDownMessages);

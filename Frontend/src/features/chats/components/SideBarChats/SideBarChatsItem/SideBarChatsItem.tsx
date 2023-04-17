@@ -11,9 +11,11 @@ interface ISideBarChatsItem {
 
 const SideBarChatsItem: FC<ISideBarChatsItem> = ({item, setType, type}) => {
     return (
-        <div className={cn(styles.item, {
-            [styles.active]: item.title === type
-        })}>
+        <div
+            onClick={() => setType(item.title)}
+            className={cn(styles.item, {
+                [styles.active]: item.title === type
+            })}>
             {item.icon}
             <h4>{item.title}</h4>
         </div>

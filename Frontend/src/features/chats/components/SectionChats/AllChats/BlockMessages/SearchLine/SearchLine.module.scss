@@ -1,7 +1,13 @@
-.search{
-  background-color: #16171b;
+.search {
   width: 220px;
   height: 50px;
   border-radius: 15px;
   padding-left: 1rem;
+  background-color: white;
+  border: 0.1px solid gray;
+  color: gray;
+  &.dark {
+    border: none;
+    background-color: #16171b;
+  }
 }
