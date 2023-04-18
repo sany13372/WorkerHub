@@ -12,27 +12,27 @@ import BlockNavigateElement from "./BlockNavigateElement/BlockNavigateElement";
 const BlockNavigate: FC = () => {
     const blocks:IBlockNavigateElement[] = [
         {
-            title:'Резюме',
+            title:'header.resume',
             navigate:'/resume',
             icon:<RiFilePaperLine size={20} color={'gray'}/>
         },
         {
-            title:'Контакты',
+            title:'header.contacts',
             navigate:'/contacts',
             icon:<IoMdContact size={20}/>
         },
         {
-            title:'Статистика',
+            title:'header.statistics',
             navigate:'/statistic',
             icon:<GiProgression size={20}/>
         },
         {
-            title:'Чаты',
+            title:'header.chats',
             navigate:'/chats',
             icon:<BsFillChatSquareTextFill size={20}/>
         },
         {
-            title:'Настройки',
+            title:'header.settings',
             navigate:'/settings',
             icon:<AiFillSetting size={20}/>
         },

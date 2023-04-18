@@ -20,34 +20,40 @@ const SideBarChats: FC<ISideBarChats> = ({setType, type}) => {
     const sideBar: IChatsElement[] = useMemo(() => (
         [
             {
-                title: 'Прикрипленные',
+                title: 'chats.attached',
                 icon: <BsFillEnvelopeCheckFill size={20}/>,
-                counts: null
+                counts: null,
+                type:'Прикрипленные'
             },
             {
-                title: 'Все',
+                title: 'chats.all',
                 icon: <TiMessages size={20}/>,
-                counts: null
+                counts: null,
+                type:'Все'
             },
             {
-                title: 'Живой чат',
+                title: 'chats.livechat',
                 icon: <SiLivechat size={20}/>,
-                counts: null
+                counts: null,
+                type:'Живой чат'
             },
             {
-                title: 'Архивные',
+                title: 'chats.archive',
                 icon: <BsFillBookmarkFill size={20}/>,
-                counts: null
+                counts: null,
+                type:'Архив'
             },
             {
-                title: 'Заблокированные',
+                title: 'chats.blocked',
                 icon: <BiBlock size={20}/>,
-                counts: null
+                counts: null,
+                type:'Заблокированно'
             },
             {
-                title: 'Мусор',
+                title: 'chats.trash',
                 icon: <BiTrash size={20}/>,
-                counts: null
+                counts: null,
+                type:'Мусор'
             },
         ]
     ), [type])

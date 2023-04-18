@@ -8,6 +8,7 @@ import {IDialog} from "@features/chats/store/dialog/types";
 import BlockDialogActive from './BlockDialogActive/BlockDialogActive'
 
 const AllChats: FC = () => {
+    
     const {refetch, dialogs, dialog, dialogActive} = useTypedSelector((store) => store.dialog)
     const {data, isLoading, refetch: refetchData} = useGetDialogsQuery()
     const {setDialogs, setDialogActive} = useActions()

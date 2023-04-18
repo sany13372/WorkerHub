@@ -1,0 +1,24 @@
+{
+  "header": {
+    "resume": "Resume",
+    "contacts": "Contacts",
+    "statistics": "Statistics",
+    "chats": "Chats",
+    "settings": "Settings"
+  },
+  "chats": {
+    "attached": "Attached",
+    "all": "All",
+    "livechat": "Live chat",
+    "archive": "Archive",
+    "blocked": "Blocked",
+    "trash": "Trash",
+    "search": "Search",
+    "unread": "Unread",
+    "read": "Read",
+    "dialogon": "Dialog on",
+    "accept":"Accept Offer",
+    "nodialogs": "Dialogs no"
+  },
+  "errore": "Oopss!Something went wrong, this page does not exist"
+}

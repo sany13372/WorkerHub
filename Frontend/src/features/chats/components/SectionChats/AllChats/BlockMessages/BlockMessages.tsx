@@ -6,6 +6,7 @@ import LoadingOrItems from "@components/UI/LoadingOrItems/LoadingOrItems";
 import {useDebounce} from "@hooks/useDebounce";
 import {IDialog} from "@features/chats/store/dialog/types";
 import {useActions} from "@hooks/useActions";
+import {useTranslation} from "react-i18next";
 
 interface IBlockMessages {
     isLoading: boolean
@@ -17,6 +18,7 @@ const BlockMessages: FC<IBlockMessages> = ({isLoading, dialogs,data}) => {
     const [searchTerm, setSearchTerm] = useState<string>('')
     const debounceSearch = useDebounce(searchTerm, 1000)
     const {setDialogs} = useActions()
+    const {t} = useTranslation()
 
     useEffect(() => {
         const queryDialogs = [...dialogs]?.filter((dialog: IDialog) => dialog.user?.firstname?.toLowerCase().includes(debounceSearch.toLowerCase()))
@@ -30,9 +32,9 @@ const BlockMessages: FC<IBlockMessages> = ({isLoading, dialogs,data}) => {
     return (
         <div className={styles.block}>
             <SearchLine searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
-            <LoadingOrItems title={'Диалогов нет'} length={dialogs?.length || 0} loading={isLoading}>
-                <DropDownMessages typeItem={false} title={'Непрочитанные'} dialogs={dialogs || []}/>
-                <DropDownMessages typeItem={true} title={'Прочитанные'} dialogs={dialogs || []}/>
+            <LoadingOrItems title={t('chats.nodialogs')} length={dialogs?.length || 0} loading={isLoading}>
+                <DropDownMessages typeItem={false} title={t('chats.unread')} dialogs={dialogs || []}/>
+                <DropDownMessages typeItem={true} title={t('chats.read')} dialogs={dialogs || []}/>
             </LoadingOrItems>
         </div>
     );

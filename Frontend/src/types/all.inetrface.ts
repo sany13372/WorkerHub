@@ -8,4 +8,5 @@ export interface IChatsElement{
     title:string
     icon:any
     counts?:number | null
+    type:string
 }

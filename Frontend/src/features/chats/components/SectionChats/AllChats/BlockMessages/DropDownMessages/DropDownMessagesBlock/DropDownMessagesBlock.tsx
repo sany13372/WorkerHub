@@ -1,7 +1,6 @@
 import {FC} from 'react';
 import {IDialog} from "@features/chats/store/dialog/types";
 import DropDownMessagesItem from './DropDownMessagesItem/DropDownMessagesItem'
-import {useAuth} from "@providers/AuthProvider";
 interface IDropDownMessagesBlock{
     item:IDialog,
     isShow:boolean,

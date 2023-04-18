@@ -1,13 +1,9 @@
 import {FC, memo, useState} from 'react';
 import styles from './DropDownMessages.module.scss'
 import cn from 'clsx'
-import DropDownMessagesItem from "./DropDownMessagesBlock/DropDownMessagesItem/DropDownMessagesItem";
 import {IDialog} from "@features/chats/store/dialog/types";
 import {RiArrowUpSLine} from 'react-icons/ri'
-import {useAuth} from "@providers/AuthProvider";
-import DropDownMessagesBlock
-    from "@features/chats/components/SectionChats/AllChats/BlockMessages/DropDownMessages/DropDownMessagesBlock/DropDownMessagesBlock";
-
+import DropDownMessagesBlock from './DropDownMessagesBlock/DropDownMessagesBlock'
 interface IDropDownMessages {
     title: string
     dialogs: IDialog[]
