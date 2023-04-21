@@ -23,6 +23,7 @@ const WindowField: FC = () => {
             userId: String(user?.id),
             authIdUser: String(user?.id)
         }
+
         if (message) {
             if (e?.key === 'Enter') {
                 sendMessage(messageDto)
